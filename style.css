@@ -244,12 +244,12 @@ footer ul a {
   #title {
     font-size: 16px;
     font-weight: 300;
-    margin-top: 85%;
-    margin-left: 20%;
+    margin-top: 90%;
+    margin-left: 25%;
   }
   #sub_title {
     font-size: 16px;
-    margin-left: 15%;
+    margin-left: 20%;
   }
   input[type="ReadMore"] {
     color: black;
