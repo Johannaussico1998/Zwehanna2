@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+header a {
+  text-decoration: none;
+}
+header {
+  padding: 0 20px;
+  background-color: rgb(19, 19, 84);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: right;
+  justify-content: space-around;
+}
+ul a {
+  color: rgb(107, 83, 83);
+}
+ul li {
+  padding: 10px;
+  margin-left: 10px;
+}
+ul li:hover {
+  background-color:rgb(9, 9, 95);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(11, 11, 90);
+}
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+body {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  width: 100%;
+  font-size: larger;
+  max-width: 1140px;
+  min-width: 755px;
+  border-style: none;
+  background-color: aliceblue;
+  background-image: url(./tower.webp);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+.content {
+  background-color: aliceblue;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.Home {
+  background-image:url(./blindfold.jpg);
+  margin-left: 0px;
+  width: 100%;
+  height: 580px;
+}
+.center {
+  position: absolute;
+  top: 72%;
+  left: 90%;
+  font-size: 100%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#title {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 15%;
+}
+#sub_title {
+  font-size: 48px;
+  font-weight: 600;
+}
+input[type="ReadMore"] {
+  color: black;
+  padding: 5px;
+  position: inherit;
+  margin-top: 15px;
+  margin-left: 230px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  background-color:crimson;
+}
+.about {
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+section{
+  display: -webkit-flex;
+  display: flex;
+}
+article{
+  padding: 20px;
+}
+#rel {
+  color:white;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  background-color: black;
+}
+#abs{
+  text-align: center;
+  padding-top: 10px;
+  padding-left:10px ;
+  padding-right: 10px;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  background-color :rgb(23, 23, 139);
+}
+.services {
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+input[type="text"],
+[type="email"] {
+  width: 50%;
+  padding: 5px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  color: black;
+  padding: 5px 20px;
+  cursor: pointer;
+  width: 15%;
+}
+select {
+  width: 40%;
+  padding: 1px 20px;
+}
+fieldset {
+  border-radius: 10px;
+}
+legend {
+  padding-top: 5px;
+}
+form {
+  padding: 20 0px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  }
+footer{
+  text-align: center;
+  background-color: rgb(19, 19, 84);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+footer ul{
+  display: flex;
+  padding-left: 100px;
+  flex-direction:row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer ul a {
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+  body{
+  margin-top: 30px;
+  line-height: 1.3;
+  font-size: larger;
+  }
+  .Home {
+    background-image:url(./blindfold.jpg);
+    background-size:100%;
+    background-position:top;
+    height: 290px; 
+    width: 74%;
+  }
+  .center {
+    position: absolute;
+    top:14%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+  }
+  #title {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 6%;
+    margin-left: 20%;
+  }
+  #sub_title {
+    font-size: 16px;
+    margin-left: 15%;
+  }
+  input[type="ReadMore"] {
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20%;
+    text-align: center;
+    background-color:crimson;
+  }
+  .about {
+    font-size: 80%;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 285px;
+    padding-bottom: 60px;                  
+  }
+  section{
+  display: inline-block;
+   display: block;
+   padding-left: 20%;
+  }
+  article{
+    padding-top: 19%;
+    padding-left: 0%;
+  }
+  aside{
+    padding-top: 14%;
+    padding-left: 0%;
+  }
+  #rel {
+    color:white;
+    text-align: center;
+    font-size: 100%;
+    width: 250px;
+    height: 165px;
+    background-color: black;
+  }
+  #abs{
+    text-align: center;
+    padding-top: 10px;
+    padding-left:10px ;
+    padding-right: 10px;
+    font-size: 90%;
+    width: 250px; 
+    height: 175px;
+    border: 1px solid black;
+    background-color :rgb(23, 23, 139);
+  }
+  input[type="text"],
+  [type="email"] {
+    width: 55%;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    color: black;
+    padding: 5px 20px;
+    cursor: pointer;
+    width: 45%;
+  }
+  select {
+    width: 50%;
+    padding: 1px 20px;
+  }
+  textarea{
+    width: 80%;
+    margin-left: 10px;
+  }
+  fieldset {
+    border-radius: 10px;
+    width: 60%;
+  }
+  legend {
+    padding-top: 5px;
+  }
+  form {
+    padding: 20 0px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  footer{
+    text-align: center;
+    background-color: rgb(19, 19, 84);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  footer ul{
+    font-size: 15px;
+    display:list-item;
+    padding-right: 60%;
+    align-items: center;
+  }
+  footer ul a {
+    color: black;
+  }
+  h1{
+    font-size: 100%;
+    padding-left: 10px;
+    padding-right: 285px;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 80%;
+    padding-right: 45%;
+  }
+  h3{
+    padding-right: 45%;
+  }
+  .copyright{
+    padding-right: 45%;
+  }
+}
