@@ -262,14 +262,14 @@ footer ul a {
   .about {
     font-size: 80%;
     padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 285px;
+    padding-left: 25px;
+    padding-right: 260px;
     padding-bottom: 60px;                  
   }
   section{
   display: inline-block;
    display: block;
-   padding-left: 20%;
+   padding-left: 15%;
   }
   article{
     padding-top: 19%;
